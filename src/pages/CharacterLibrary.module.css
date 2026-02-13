@@ -1,0 +1,114 @@
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: var(--spacing-xl) var(--spacing-md);
+    text-align: center;
+}
+
+.header {
+    margin-bottom: var(--spacing-xl);
+}
+
+.subHeader {
+    font-family: var(--font-main);
+    font-size: 0.85rem;
+    letter-spacing: 0.2em;
+    color: var(--text-soft);
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: var(--spacing-sm);
+}
+
+.title {
+    font-family: var(--font-serif);
+    /* Serif font for elegance */
+    font-size: 3rem;
+    color: #3A3A3A;
+    /* Slightly darker than charcoal */
+    font-weight: 400;
+    margin: 0;
+}
+
+.toggleContainer {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-xl);
+}
+
+.toggleBtn {
+    font-family: var(--font-main);
+    font-size: 1rem;
+    color: var(--text-soft);
+    padding: 8px 24px;
+    border-radius: var(--radius-pill);
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    /* Prevent layout shift */
+}
+
+.toggleBtn:hover {
+    color: var(--text-charcoal);
+}
+
+.active {
+    color: var(--text-charcoal);
+    border-color: var(--text-charcoal);
+    background-color: transparent;
+    /* Assuming outline style based on ref, or maybe faint fill */
+    font-weight: 500;
+    border: 1.5px solid #4A4A4A;
+}
+
+/* Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Mobile default */
+    gap: var(--spacing-md);
+    justify-items: center;
+}
+
+/* Tablet */
+@media (min-width: 600px) {
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Desktop - Match reference image (7 columns) */
+@media (min-width: 900px) {
+    .grid {
+        grid-template-columns: repeat(7, 1fr);
+        gap: var(--spacing-lg);
+    }
+}
+
+.card {
+    width: 100%;
+    aspect-ratio: 1;
+    /* Square */
+    background-color: #FDFBF6;
+    /* Very subtle off-white difference */
+    border-radius: var(--radius-md);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    background-color: #FFF;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.char {
+    font-family: var(--font-korean);
+    font-size: 1.8rem;
+    color: var(--text-charcoal);
+    font-weight: 400;
+}

@@ -1,0 +1,60 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-sm) var(--spacing-xl);
+    /* Slightly smaller vertical padding */
+
+    /* Glassmorphism */
+    background: rgba(255, 255, 255, 0.6);
+    /* Semi-transparent white */
+    backdrop-filter: blur(12px);
+    /* Blur effect */
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+
+    /* Sticky Positioning */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    width: 100%;
+    max-width: 100%;
+    /* Ensure it spans full width */
+    margin: 0 auto;
+}
+
+.logo {
+    font-family: var(--font-korean);
+    font-size: 1.5rem;
+    color: var(--accent-pink);
+    font-weight: 500;
+}
+
+.links {
+    display: flex;
+    gap: var(--spacing-md);
+}
+
+.link {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    color: #8D8D8D;
+    /* Muted text default */
+    padding: 8px 16px;
+    border-radius: var(--radius-pill);
+    transition: all 0.3s ease;
+    font-family: var(--font-main);
+}
+
+.link:hover {
+    color: var(--text-charcoal);
+}
+
+.active {
+    background-color: #F3E3E3;
+    /* Soft pill bg */
+    color: #5A4A4A;
+    font-weight: 500;
+}

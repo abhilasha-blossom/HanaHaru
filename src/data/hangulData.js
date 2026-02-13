@@ -1,0 +1,30 @@
+export const hangulData = {
+    consonants: [
+        { id: 'c1', char: 'ㄱ', name: 'Giyeok', romanization: 'g/k' },
+        { id: 'c2', char: 'ㄴ', name: 'Nieun', romanization: 'n' },
+        { id: 'c3', char: 'ㄷ', name: 'Digeut', romanization: 'd/t' },
+        { id: 'c4', char: 'ㄹ', name: 'Rieul', romanization: 'r/l' },
+        { id: 'c5', char: 'ㅁ', name: 'Mieum', romanization: 'm' },
+        { id: 'c6', char: 'ㅂ', name: 'Bieup', romanization: 'b/p' },
+        { id: 'c7', char: 'ㅅ', name: 'Siot', romanization: 's' },
+        { id: 'c8', char: 'ㅇ', name: 'Ieung', romanization: 'ng' },
+        { id: 'c9', char: 'ㅈ', name: 'Jieut', romanization: 'j' },
+        { id: 'c10', char: 'ㅊ', name: 'Chieut', romanization: 'ch' },
+        { id: 'c11', char: 'ㅋ', name: 'Kieuk', romanization: 'k' },
+        { id: 'c12', char: 'ㅌ', name: 'Tieut', romanization: 't' },
+        { id: 'c13', char: 'ㅍ', name: 'Pieup', romanization: 'p' },
+        { id: 'c14', char: 'ㅎ', name: 'Hieut', romanization: 'h' },
+    ],
+    vowels: [
+        { id: 'v1', char: 'ㅏ', name: 'A', romanization: 'a' },
+        { id: 'v2', char: 'ㅑ', name: 'Ya', romanization: 'ya' },
+        { id: 'v3', char: 'ㅓ', name: 'Eo', romanization: 'eo' },
+        { id: 'v4', char: 'ㅕ', name: 'Yeo', romanization: 'yeo' },
+        { id: 'v5', char: 'ㅗ', name: 'O', romanization: 'o' },
+        { id: 'v6', char: 'ㅛ', name: 'Yo', romanization: 'yo' },
+        { id: 'v7', char: 'ㅜ', name: 'U', romanization: 'u' },
+        { id: 'v8', char: 'ㅠ', name: 'Yu', romanization: 'yu' },
+        { id: 'v9', char: 'ㅡ', name: 'Eu', romanization: 'eu' },
+        { id: 'v10', char: 'ㅣ', name: 'I', romanization: 'i' },
+    ]
+};

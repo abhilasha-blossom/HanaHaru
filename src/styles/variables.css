@@ -1,0 +1,91 @@
+:root {
+  /* Calm Palette */
+  --bg-cream: #FFF9F0;
+  --text-charcoal: #4A4A4A;
+  --text-soft: #8C8C8C;
+
+  /* Accents */
+  --accent-pink: #E8A0A0;
+  --accent-pink-dark: #D08080;
+  /* For hover states */
+  --accent-sage: #B4C6A6;
+  /* For success/nature vibes */
+
+  /* UI Elements */
+  --btn-primary: #D89898;
+  --btn-primary-hover: #C07878;
+  --btn-text: #FFFFFF;
+
+  --card-bg: #FFFFFF;
+  --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+
+  /* Typography */
+  --font-main: 'Outfit', sans-serif;
+  /* Clean, modern, round */
+  --font-serif: 'Playfair Display', serif;
+  /* Aesthetic headers */
+  --font-korean: 'Noto Sans KR', sans-serif;
+
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 48px;
+
+  /* Border Radius */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-pill: 50px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-cream);
+  color: var(--text-charcoal);
+  font-family: var(--font-main);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* Hide Scrollbar Global */
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+/* Utilities */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

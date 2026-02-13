@@ -1,0 +1,133 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: var(--spacing-xl) var(--spacing-md);
+    text-align: center;
+}
+
+.header {
+    margin-bottom: var(--spacing-xl);
+}
+
+.subHeader {
+    font-family: var(--font-main);
+    font-size: 0.85rem;
+    letter-spacing: 0.2em;
+    color: var(--text-soft);
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: var(--spacing-sm);
+}
+
+.title {
+    font-family: var(--font-serif);
+    font-size: 3rem;
+    color: #3A3A3A;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: var(--spacing-sm);
+}
+
+.subtitle {
+    color: var(--text-soft);
+    font-size: 1rem;
+}
+
+.section {
+    margin-bottom: var(--spacing-xl);
+}
+
+.sectionTitle {
+    font-family: var(--font-main);
+    font-size: 0.9rem;
+    letter-spacing: 0.15em;
+    color: var(--text-soft);
+    text-transform: uppercase;
+    margin-bottom: var(--spacing-md);
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-sm);
+}
+
+.plantPot {
+    width: 60px;
+    height: 60px;
+    background-color: #F8F8F8;
+    border-radius: var(--radius-md);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.char {
+    font-family: var(--font-korean);
+    font-size: 1.2rem;
+    color: var(--text-charcoal);
+    margin-bottom: 2px;
+}
+
+/* Status States */
+.locked {
+    opacity: 0.3;
+}
+
+.practiced {
+    background-color: #F4F8F0;
+    /* Slight green tint */
+    opacity: 1;
+}
+
+.bloomed {
+    background-color: #FFF0F0;
+    /* Slight pink tint */
+    opacity: 1;
+    box-shadow: 0 4px 10px rgba(232, 160, 160, 0.2);
+}
+
+.statusIcon {
+    height: 14px;
+}
+
+/* Footer Stats */
+.statsFooter {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-xl);
+    margin-bottom: var(--spacing-xl);
+}
+
+.statCard {
+    background-color: #FDFBF6;
+    padding: 24px;
+    border-radius: var(--radius-md);
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.statValue {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    color: #3A3A3A;
+    font-weight: 600;
+}
+
+.statLabel {
+    font-size: 0.8rem;
+    color: var(--text-soft);
+}
+
+.footerNote {
+    color: #A0A0A0;
+    font-size: 0.9rem;
+}
